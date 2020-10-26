@@ -3,23 +3,111 @@
 }
 body {
     font-family: 'Lora', serif;
+    overflow-x: hidden;
 }
-
-.main__container {
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+.add-button {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+button {
+    font-size: 4rem;
+    background-color: #f3f3f3;
+    color: #333;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s all ease;
+}
+button:focus {
+    border: none;
+}
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.main {
     width: 100%;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
 }
-.left__sidebar {
+.main__left-sidebar {
     flex: 1;
     height: 100%;
-    width: 20%;
+    width: 4rem;
+    background-color: red;
 }
-.left__sidebar__text {
+.left-sidebar__text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
     margin: 3rem 1rem 1rem 2rem;
+    position: fixed;
+    font-weight: 600;
+}
+.main__content-container{
+    flex: 14;
+}
+.content-container__post {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+}
+.post__photo-container {
+    flex: 1;
+}
+.photo-container__img {
+    width: 100%;
+}
+.content-container__text {
+    margin: 0;
+    /* padding: 5rem; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: auto;
+}
+.post__link {
+    transition: 0.3s all ease;
+
+}
+.post__link:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.text--padding {
+    padding: 0.2rem 5rem;
+}
+.text__title > h1 {
+    font-size: 3rem;
+}
+.text__description > p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+.text__author > h4 {
+    color: #444444;
+    text-transform: capitalize;
+}
+.text__date {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: lightslategray
 }
