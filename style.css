@@ -1,0 +1,25 @@
+:root {
+
+}
+body {
+    font-family: 'Lora', serif;
+}
+
+.main__container {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.left__sidebar {
+    flex: 1;
+    height: 100%;
+    width: 20%;
+}
+.left__sidebar__text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    margin: 3rem 1rem 1rem 2rem;
+}
